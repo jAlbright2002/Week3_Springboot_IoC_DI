@@ -18,8 +18,7 @@ public class UserController {
 
     @GetMapping("/registerUser/{name}/{email}")
     public String registerUser(@PathVariable String name, @PathVariable String email) {
-        us.registerUser(name, email);
-        return "Hello";
+        return us.registerUser(name, email);
     }
 
 }
